@@ -1,0 +1,520 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>amostra.server package &mdash; amostra 1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="amostra 1 documentation" href="index.html"/>
+        <link rel="up" title="amostra package" href="amostra.html"/>
+        <link rel="next" title="amostra.test package" href="amostra.test.html"/>
+        <link rel="prev" title="amostra.sample_data package" href="amostra.sample_data.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> amostra
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">amostra</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html">Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="amostra.html">amostra package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="amostra.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="amostra.client.html">amostra.client package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="amostra.sample_data.html">amostra.sample_data package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">amostra.server package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="amostra.test.html">amostra.test package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="amostra.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="amostra.html#module-amostra.ignition">amostra.ignition module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="amostra.html#module-amostra.testing">amostra.testing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="amostra.html#module-amostra">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">amostra</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="modules.html">amostra</a> &raquo;</li>
+      
+          <li><a href="amostra.html">amostra package</a> &raquo;</li>
+      
+    <li>amostra.server package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/amostra.server.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="amostra-server-package">
+<h1>amostra.server package<a class="headerlink" href="#amostra-server-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-amostra.server.conf">
+<span id="amostra-server-conf-module"></span><h2>amostra.server.conf module<a class="headerlink" href="#module-amostra.server.conf" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="amostra.server.conf.load_configuration">
+<code class="descclassname">amostra.server.conf.</code><code class="descname">load_configuration</code><span class="sig-paren">(</span><em>name</em>, <em>prefix</em>, <em>fields</em>, <em>allow_missing=False</em><span class="sig-paren">)</span><a class="headerlink" href="#amostra.server.conf.load_configuration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load configuration data form a cascading series of locations.
+The precedence order is (highest priority last):
+1. CONDA_ENV/etc/{name}.yaml (if <a href="#id1"><span class="problematic" id="id2">CONDA_ETC_</span></a> env is defined)
+2. /etc/{name}.yml
+3. ~/.config/{name}/connection.yml
+4. reading {PREFIX}_{FIELD} environmental variables
+:param name: The expected base-name of the configuration files
+:type name: str
+:param prefix: The prefix when looking for environmental variables
+:type prefix: str
+:param fields: The required configuration fields
+:type fields: iterable of strings</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><strong>conf</strong> &#8211; Dictionary keyed on <code class="docutils literal"><span class="pre">fields</span></code> with the values extracted</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-amostra.server.engine">
+<span id="amostra-server-engine-module"></span><h2>amostra.server.engine module<a class="headerlink" href="#module-amostra.server.engine" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="amostra.server.engine.ContainerReferenceHandler">
+<em class="property">class </em><code class="descclassname">amostra.server.engine.</code><code class="descname">ContainerReferenceHandler</code><span class="sig-paren">(</span><em>application</em>, <em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#amostra.server.engine.ContainerReferenceHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#amostra.server.engine.DefaultHandler" title="amostra.server.engine.DefaultHandler"><code class="xref py py-class docutils literal"><span class="pre">amostra.server.engine.DefaultHandler</span></code></a></p>
+<p>Handler for SampleReference insert, update, and querying.
+A RESTful handler, nothing fancy or stateful about this</p>
+<dl class="method">
+<dt id="amostra.server.engine.ContainerReferenceHandler.get">
+<code class="descname">get</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#amostra.server.engine.ContainerReferenceHandler.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Query &#8216;container&#8217; documents given certain parameters.</p>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descname">Pass 'num' in order to obtain the last 'num' sample references.</code></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="amostra.server.engine.ContainerReferenceHandler.post">
+<code class="descname">post</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#amostra.server.engine.ContainerReferenceHandler.post" title="Permalink to this definition">¶</a></dt>
+<dd><p>Insert &#8216;sample&#8217; documents</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="amostra.server.engine.ContainerReferenceHandler.put">
+<code class="descname">put</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#amostra.server.engine.ContainerReferenceHandler.put" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update or Insert if &#8216;sample&#8217; document does not exist.</p>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descname">Update supports both field update and document replacement. If you</code></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descname">would like to replace a document, simply provide a full doc in update</code></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descname">field. Otherwise, provide a dict that holds the new value and field name.</code></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descname">Returns the total number of documents that are updated.</code></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descname">get</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descname">post</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descname">put</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="amostra.server.engine.DefaultHandler">
+<em class="property">class </em><code class="descclassname">amostra.server.engine.</code><code class="descname">DefaultHandler</code><span class="sig-paren">(</span><em>application</em>, <em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#amostra.server.engine.DefaultHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">tornado.web.RequestHandler</span></code></p>
+<p>DefaultHandler which takes care of CORS. Javascript needs this.
+In general, methods on RequestHandler and elsewhere in Tornado
+are not thread-safe. In particular, methods such as write(),
+finish(), and flush() must only be called from the main thread.
+If you use multiple threads it is important to use IOLoop.add_callback
+to transfer control back to the main thread before finishing the request.</p>
+<dl class="method">
+<dt id="amostra.server.engine.DefaultHandler.data_received">
+<code class="descname">data_received</code><span class="sig-paren">(</span><em>chunk</em><span class="sig-paren">)</span><a class="headerlink" href="#amostra.server.engine.DefaultHandler.data_received" title="Permalink to this definition">¶</a></dt>
+<dd><p>Abstract method, overwrite potential default</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="amostra.server.engine.DefaultHandler.set_default_headers">
+<code class="descname">set_default_headers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#amostra.server.engine.DefaultHandler.set_default_headers" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="amostra.server.engine.RequestReferenceHandler">
+<em class="property">class </em><code class="descclassname">amostra.server.engine.</code><code class="descname">RequestReferenceHandler</code><span class="sig-paren">(</span><em>application</em>, <em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#amostra.server.engine.RequestReferenceHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#amostra.server.engine.DefaultHandler" title="amostra.server.engine.DefaultHandler"><code class="xref py py-class docutils literal"><span class="pre">amostra.server.engine.DefaultHandler</span></code></a></p>
+<dl class="method">
+<dt id="amostra.server.engine.RequestReferenceHandler.get">
+<code class="descname">get</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#amostra.server.engine.RequestReferenceHandler.get" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="amostra.server.engine.RequestReferenceHandler.post">
+<code class="descname">post</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#amostra.server.engine.RequestReferenceHandler.post" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="amostra.server.engine.RequestReferenceHandler.put">
+<code class="descname">put</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#amostra.server.engine.RequestReferenceHandler.put" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="amostra.server.engine.SampleReferenceHandler">
+<em class="property">class </em><code class="descclassname">amostra.server.engine.</code><code class="descname">SampleReferenceHandler</code><span class="sig-paren">(</span><em>application</em>, <em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#amostra.server.engine.SampleReferenceHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#amostra.server.engine.DefaultHandler" title="amostra.server.engine.DefaultHandler"><code class="xref py py-class docutils literal"><span class="pre">amostra.server.engine.DefaultHandler</span></code></a></p>
+<p>Handler for SampleReference insert, update, and querying.
+A RESTful handler, nothing fancy or stateful about this</p>
+<dl class="method">
+<dt id="amostra.server.engine.SampleReferenceHandler.get">
+<code class="descname">get</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#amostra.server.engine.SampleReferenceHandler.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Query &#8216;sample_referenece&#8217; documents given certain parameters.</p>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descname">Pass 'num' in order to obtain the last 'num' sample references.</code></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="amostra.server.engine.SampleReferenceHandler.post">
+<code class="descname">post</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#amostra.server.engine.SampleReferenceHandler.post" title="Permalink to this definition">¶</a></dt>
+<dd><p>Insert &#8216;sample&#8217; documents</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="amostra.server.engine.SampleReferenceHandler.put">
+<code class="descname">put</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#amostra.server.engine.SampleReferenceHandler.put" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update or Insert if &#8216;sample&#8217; document does not exist.</p>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descname">Update supports both field update and document replacement. If you</code></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descname">would like to replace a document, simply provide a full doc in update</code></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descname">field. Otherwise, provide a dict that holds the new value and field name.</code></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descname">Returns the total number of documents that are updated.</code></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descname">get</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descname">post</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descname">put</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="amostra.server.engine.SchemaHandler">
+<em class="property">class </em><code class="descclassname">amostra.server.engine.</code><code class="descname">SchemaHandler</code><span class="sig-paren">(</span><em>application</em>, <em>request</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#amostra.server.engine.SchemaHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#amostra.server.engine.DefaultHandler" title="amostra.server.engine.DefaultHandler"><code class="xref py py-class docutils literal"><span class="pre">amostra.server.engine.DefaultHandler</span></code></a></p>
+<p>Provides the json used for schema validation provided collection name</p>
+<dl class="method">
+<dt id="amostra.server.engine.SchemaHandler.get">
+<code class="descname">get</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#amostra.server.engine.SchemaHandler.get" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="amostra.server.engine.SchemaHandler.post">
+<code class="descname">post</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#amostra.server.engine.SchemaHandler.post" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="amostra.server.engine.SchemaHandler.put">
+<code class="descname">put</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#amostra.server.engine.SchemaHandler.put" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="amostra.server.engine.db_connect">
+<code class="descclassname">amostra.server.engine.</code><code class="descname">db_connect</code><span class="sig-paren">(</span><em>database</em>, <em>mongo_host</em>, <em>mongo_port</em><span class="sig-paren">)</span><a class="headerlink" href="#amostra.server.engine.db_connect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Helper function to deal with stateful connections to MongoDB
+Connection established lazily. Connects to the database on request.
+Same connection pool is used for all clients per recommended by
+tornado developer manual.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>database</strong> (<em>str</em>) &#8211; The name of database pymongo creates and/or connects</li>
+<li><strong>host</strong> (<em>str</em>) &#8211; Name/address of the server that mongo daemon lives</li>
+<li><strong>port</strong> (<em>int</em>) &#8211; Port num of the server</li>
+<li><strong>pymongo.database.Database</strong> (<em>Returns</em>) &#8211; </li>
+<li><strong>-------</strong> &#8211; Async server object which comes in handy as server has to juggle</li>
+<li><strong>clients and makes no difference for a single client compared</strong> (<em>multiple</em>) &#8211; </li>
+<li><strong>pymongo</strong> (<em>to</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-amostra.server.utils">
+<span id="amostra-server-utils-module"></span><h2>amostra.server.utils module<a class="headerlink" href="#module-amostra.server.utils" title="Permalink to this headline">¶</a></h2>
+<dl class="exception">
+<dt id="amostra.server.utils.AmostraException">
+<em class="property">exception </em><code class="descclassname">amostra.server.utils.</code><code class="descname">AmostraException</code><a class="headerlink" href="#amostra.server.utils.AmostraException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">Exception</span></code></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="amostra.server.utils.return2client">
+<code class="descclassname">amostra.server.utils.</code><code class="descname">return2client</code><span class="sig-paren">(</span><em>handler</em>, <em>payload</em><span class="sig-paren">)</span><a class="headerlink" href="#amostra.server.utils.return2client" title="Permalink to this definition">¶</a></dt>
+<dd><p>Home brew solution to dump the result back to client&#8217;s open socket.
+No need to worry about package size or socket behavior as
+tornado handles this for us
+:param handler: Request handler for the collection of operation(post/get)
+:type handler: tornado.web.RequestHandler
+:param payload: Information to be sent to the client
+:type payload: dict, list</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="amostra.server.utils.unpack_params">
+<code class="descclassname">amostra.server.utils.</code><code class="descname">unpack_params</code><span class="sig-paren">(</span><em>handler</em><span class="sig-paren">)</span><a class="headerlink" href="#amostra.server.utils.unpack_params" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unpacks the queries from the body of the header
+:param handler: Handler for incoming request to collection
+:type handler: tornado.web.RequestHandler
+:param Returns dict:
+:param &#8212;&#8212;-: Unpacked query in dict format.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-amostra.server">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-amostra.server" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="amostra.test.html" class="btn btn-neutral float-right" title="amostra.test package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="amostra.sample_data.html" class="btn btn-neutral" title="amostra.sample_data package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Arman Arkilic.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
