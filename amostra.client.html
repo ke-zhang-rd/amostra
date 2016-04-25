@@ -88,6 +88,7 @@
 <li class="toctree-l2"><a class="reference internal" href="setup.html">Setup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial.html">Online Sample Management Examples</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial.html#local-sample-management-examples">Local Sample Management Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html">More Examples</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="amostra.html">amostra package</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="amostra.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l4 current"><a class="current reference internal" href="#">amostra.client package</a></li>
@@ -162,17 +163,17 @@
 <dl class="function">
 <dt id="amostra.client.amutils.doc_or_uid_to_uid">
 <code class="descclassname">amostra.client.amutils.</code><code class="descname">doc_or_uid_to_uid</code><span class="sig-paren">(</span><em>doc_or_uid</em><span class="sig-paren">)</span><a class="headerlink" href="#amostra.client.amutils.doc_or_uid_to_uid" title="Permalink to this definition">¶</a></dt>
-<dd><p>Given Document or uid return the uid
-:param doc_or_uid: If str, then assume uid and pass through, if not, return</p>
-<blockquote>
-<div>the &#8216;uid&#8217; field</div></blockquote>
+<dd><p>Given Document or uid return the uid</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><strong>uid</strong> &#8211; A string version of the uid of the given document</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>doc_or_uid</strong> (<em>dict or str</em>) &#8211; If str, then assume uid and pass through, if not, return
+the &#8216;uid&#8217; field</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><strong>uid</strong> &#8211; A string version of the uid of the given document</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">str</td>
 </tr>
 </tbody>
 </table>
@@ -211,10 +212,10 @@ due to performance constraints.</p>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">uid of the payload created</p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>ins_doc</strong> &#8211; Inserted Container document uid</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">payload[&#8216;uid&#8217;]</p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">str</p>
 </td>
 </tr>
 </tbody>
@@ -299,7 +300,7 @@ No upsert(s). If doc does not exist, simply do not update</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">uid of the payload created</td>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><strong>ins_doc</strong> &#8211; The inserted Request document uid</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">str</td>
 </tr>
@@ -390,10 +391,10 @@ No upsert(s).</p>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>doc</strong> &#8211; The inserted document</p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>ins_doc</strong> &#8211; The inserted document</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">dict</p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">str</p>
 </td>
 </tr>
 </tbody>

@@ -88,6 +88,7 @@
 <li class="toctree-l2"><a class="reference internal" href="setup.html">Setup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial.html">Online Sample Management Examples</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial.html#local-sample-management-examples">Local Sample Management Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html">More Examples</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="amostra.html">amostra package</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="amostra.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="amostra.client.html">amostra.client package</a></li>
@@ -420,6 +421,24 @@ tornado developer manual.</p>
 <dt id="amostra.server.utils.AmostraException">
 <em class="property">exception </em><code class="descclassname">amostra.server.utils.</code><code class="descname">AmostraException</code><a class="headerlink" href="#amostra.server.utils.AmostraException" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">Exception</span></code></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="amostra.server.utils.default_timeuid">
+<code class="descclassname">amostra.server.utils.</code><code class="descname">default_timeuid</code><span class="sig-paren">(</span><em>document</em><span class="sig-paren">)</span><a class="headerlink" href="#amostra.server.utils.default_timeuid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given a document, default time and uid fields if not provided</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>document</strong> (<em>dict</em>) &#8211; Document to be inserted</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Document with defaults</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="function">
