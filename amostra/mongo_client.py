@@ -58,7 +58,7 @@ class Client:
         collection = self._db[collection_name]
 
         # Insert the new object.
-        collection.insert(obj.to_dict())
+        collection.insert_one(obj.to_dict())
 
         # Observe any updates to the object and sync them to MongoDB.
         obj.observe(self._update)
@@ -89,7 +89,7 @@ class Client:
         # Remove the internal MongoDB id.
         original.pop('_id')
         # Insert the old version in {collection_name}_revisions
-        revisions = revisions.insert(original)
+        revisions = revisions.insert_one(original)
 
     def _document_to_obj(self, obj_type, document):
         """
