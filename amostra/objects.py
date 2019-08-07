@@ -79,9 +79,20 @@ class AmostraDocument(HasTraits):
         d.pop('revision')
         return accessor.new(**d)
 
-    def revert(self, revision):
-        ...
+    #def revert(self, revision):
+    def revert(self, num):
+        rev_list = list(self.revisions())
+        try:
+            target = rev_list[num]
+        except:
+            print(f'num value {num} is out of revisions range')
 
+        rev_list.pop(num)
+        rev_list.insert(0, self)
+        for trait_name in self.trait_names():
+            if trait_name not in ['uuid', 'revision']:
+                setattr(self, trait_name, getattr(target, trait_name))
+        rev_list.insert(0, target)
 
 
 class Sample(AmostraDocument):
