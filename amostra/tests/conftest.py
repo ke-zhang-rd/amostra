@@ -1,7 +1,7 @@
 import pytest
+import uuid
 
 
 @pytest.fixture()
-def url():
-    url = 'mongodb://localhost:27017/'
-    return url
+def uid():
+    return str(uuid.uuid4())
