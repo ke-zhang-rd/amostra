@@ -1,0 +1,230 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.3",
+    "title": "Amastra samples",
+    "description": "",
+    "contact": {
+      "email": "dama@bnl.gov"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host": "NSLS-II.github.io.amostra",
+  "basePath": "/v1",
+  "tags": [
+    {
+      "name": "samples"
+    }
+  ],
+  "schemes": [
+    "https",
+    "http"
+  ],
+  "paths": {
+    "/samples/{uuid}": {
+      "get": {
+        "tags": [
+          "samples"
+        ],
+        "summary": "Find a sample by uuid",
+        "description": "Returns a sample with specific uuid",
+        "operationId": "getSampleByuuid",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "uuid",
+            "in": "path",
+            "description": "Globally unique ID",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/Sample"
+            }
+          },
+          "400": {
+            "description": "Invalid uuid supplied"
+          },
+          "404": {
+            "description": "sample not found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "samples"
+        ],
+        "summary": "Update an existing sample",
+        "description": "",
+        "operationId": "updateSample",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "uuid",
+            "in": "path",
+            "description": "Globally unique ID",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "in": "body",
+            "schema": {
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "new": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid ID supplied"
+          },
+          "404": {
+            "description": "Sample not found"
+          },
+          "405": {
+            "description": "Validation exception"
+          }
+        }
+      }
+    },
+    "/samples/new": {
+      "post": {
+        "tags": [
+          "samples"
+        ],
+        "summary": "create a new sample",
+        "description": "",
+        "operationId": "newSample",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "parameters",
+            "in": "body",
+            "description": "Sample object that needs to be added",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Sample"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/Sample"
+            }
+          },
+          "400": {
+            "description": "Invalid ID supplied"
+          }
+        }
+      }
+    },
+    "/samples": {
+      "post": {
+        "tags": [
+          "samples"
+        ],
+        "description": "",
+        "operationId": "postSample",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "filter",
+            "in": "body",
+            "description": "Sample object that needs to be added",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Sample"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "405": {
+            "description": "Invalid input"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Sample": {
+      "properties": {
+        "uuid": {
+          "type": "string",
+          "description": "Globally unique ID"
+        },
+        "revision": {
+          "type": "integer",
+          "description": "Revision number"
+        },
+        "name": {
+          "type": "string",
+          "description": "Sample name"
+        },
+        "projects": {
+          "description": "List of foreign keys to Projects",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "composition": {
+          "type": "string",
+          "description": "Sample composition (IUCr specification)"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Arbitrary useful labels"
+        },
+        "description": {
+          "type": "string",
+          "description": "Longer sample description"
+        }
+      },
+      "required": [
+        "uuid",
+        "revision",
+        "name"
+      ],
+      "type": "object"
+    }
+  }
+}
