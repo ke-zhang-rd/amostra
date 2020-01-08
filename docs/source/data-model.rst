@@ -36,3 +36,8 @@ Institution
 ===========
 
 .. literalinclude:: ../../amostra/schemas/institution.json
+
+API
+===
+
+.. openapi:: openapi.yml

@@ -21,4 +21,3 @@ client for each of these modes that present identical interfaces to the user.
    data-model
    reference
    release-history
-.. openapi:: openapi.yaml
