@@ -24,10 +24,21 @@ install:
   # Install extra requirements for running tests and building docs.
   - pip install -r requirements-dev.txt
 
+
+env:
+  global:
+    # Doctr deploy key for ke-zhang-rd/amostra
+    - secure: "cnUqhKTpZHa7yVDWsTsUkiYnb3Kw8YikkmqwFhDXLPqiQXo6R3UKk+FfGYZZAcCfJT0ea6YhbdQwf1MVniPyNJ4P1fCbA4vkZ2mJGenHGQw7eJrCkCSrjp7xNm9beR6kT/yK0OFFnSKOWUVDPlTDrVJhgfHp1M1rMEAUdwxYR7KpsPfSTBrOOOyCMlaH0ZyCc0fSJoYSJybO4NyvtGkARWYJ1D6MMqsVPJkFgB+ePWrjWu3CENI/p6ro1lvXj+WaAxcAYK6gJExqazIstYv52Jbhse+O8GdIvrQxB6WlD5XEOG9qXVb3j4bsXdZaMD7t7BrR53sCAAGOiRzE8XzYLYEH1nuc1JhzRLkRs1L7xxeXpKNnuzbQBrXSZvIdQa8ElQS3stT0nerQrCGbRkPcywaguC2V7o8YcnwWKP1ObFQW2zjONBavzgWEJVo1L2iSTUsZyuc/7yukmPF0kGHZ3NiQabwsWJM/CQ05Z7z65a7VCpDZQd5WU7ZutfG7BRWjkJqkX7GPp2sUbz9mF+1XQ7xPuvzPeA/BOYMaqB+p64YuvkMDGm0miZC2HRyOS+ZxCoeSgzfsGVCa74MABAAT93XeuYNCGgg4nixaMputilVyuB64VFuZKs7wEx3v7p937eUWionLYGKlMG9wi/1roWFKaOuTt6MnQFWpQjoZ54A="
+
 script:
   - coverage run -m pytest  # Run the tests and check for test coverage.
   - coverage report -m  # Generate test coverage report.
   - codecov  # Upload the report to codecov.
   - isort  --check-only  # Verify sorted imports.
   - flake8 --max-line-length=115  # Enforce code style (but relax line length limit a bit).
+  - set -e  # If any of the following steps fail, just stop at that point.
   - make -C docs html  # Build the documentation.
+  - pip install doctr
+    # doctr deploy --built-docs docs/build/html .  # Publish the documentation.
+  - doctr deploy --deploy-repo ke-zhang-rd/ke-zhang-rd.github.io --deploy-branch-name master amostra;
+
