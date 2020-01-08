@@ -23,6 +23,7 @@ install:
   - pip install .[complete]
   # Install extra requirements for running tests and building docs.
   - pip install -r requirements-dev.txt
+  - pip install sphinxcontrib-openapi
 
 
 
