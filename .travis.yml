@@ -42,5 +42,5 @@ script:
   - pip install sphinxcontrib-openapi
   - make -C docs html  # Build the documentation.
   - pip install doctr
-  - doctr deploy --deploy-repo ke-zhang-rd/ke-zhang-rd.github.io --deploy-branch-name master amostra;
+  - doctr deploy --deploy-repo ke-zhang-rd/ke-zhang-rd.github.io --deploy-branch-name temp amostra;
 
