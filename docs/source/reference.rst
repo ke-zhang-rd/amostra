@@ -36,3 +36,8 @@ API
 ===
 
 .. openapi:: openapi.json
+
+TEST
+====
+
+.. openapi:: openapi.json
